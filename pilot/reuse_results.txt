@@ -1,0 +1,5 @@
+|avant| distinct = 3,680,146
+|apres| distinct = 2,413,165
+|intersection|   = 2,041,276
+reuse vs espace nouveau : 84.6%
+reuse vs espace ancien  : 55.5%
