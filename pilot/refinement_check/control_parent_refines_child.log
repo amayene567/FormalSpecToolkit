@@ -1,0 +1,58 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 36 and seed 1581140919999353332 with 2 workers on 2 cores with 1330MB heap and 64MB offheap memory [pid: 254] (Linux 6.18.44-fc-v185 amd64, Ubuntu 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /tmp/claude-0/-home-claude/4952a995-aef4-5e88-8efa-2259faa11670/scratchpad/refines_neg/MCParentRefinesChild.tla
+Parsing file /tmp/claude-0/-home-claude/4952a995-aef4-5e88-8efa-2259faa11670/scratchpad/refines_neg/MCMongoReplReconfig.tla
+Parsing file /tmp/claude-0/-home-claude/4952a995-aef4-5e88-8efa-2259faa11670/scratchpad/refines_neg/MongoReplReconfig.tla
+Parsing file /tmp/Integers.tla
+Parsing file /tmp/FiniteSets.tla
+Parsing file /tmp/Sequences.tla
+Parsing file /tmp/TLC.tla
+Parsing file /tmp/Naturals.tla
+Parsing file /tmp/claude-0/-home-claude/4952a995-aef4-5e88-8efa-2259faa11670/scratchpad/refines_neg/MongoReplReconfigChild.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module MongoReplReconfig
+Semantic processing of module MCMongoReplReconfig
+Semantic processing of module MongoReplReconfigChild
+Semantic processing of module MCParentRefinesChild
+Starting... (2026-10-29 08:12:22)
+Computing initial states...
+Computed 2 initial states...
+Computed 4 initial states...
+Finished computing initial states: 7 states generated, with 3 of them distinct at 2026-10-29 08:12:22.
+Error: Action property ParentSteps is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ config = (n1 :> {n1, n2} @@ n2 :> {n1, n2} @@ n3 :> {n1, n2})
+/\ configTerm = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0)
+/\ configVersion = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0)
+/\ currentTerm = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0)
+/\ state = (n1 :> Follower @@ n2 :> Follower @@ n3 :> Follower)
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>>)
+/\ immediatelyCommitted = {}
+
+State 2: <BecomeLeaderAction line 463, col 29 to line 463, col 73 of module MongoReplReconfig>
+/\ config = (n1 :> {n1, n2} @@ n2 :> {n1, n2} @@ n3 :> {n1, n2})
+/\ configTerm = (n1 :> 1 @@ n2 :> 0 @@ n3 :> 0)
+/\ configVersion = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0)
+/\ currentTerm = (n1 :> 1 @@ n2 :> 1 @@ n3 :> 0)
+/\ state = (n1 :> Leader @@ n2 :> Follower @@ n3 :> Follower)
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>>)
+/\ immediatelyCommitted = {}
+
+State 3: <BecomeLeaderAction line 463, col 29 to line 463, col 73 of module MongoReplReconfig>
+/\ config = (n1 :> {n1, n2} @@ n2 :> {n1, n2} @@ n3 :> {n1, n2})
+/\ configTerm = (n1 :> 2 @@ n2 :> 0 @@ n3 :> 0)
+/\ configVersion = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 0)
+/\ state = (n1 :> Leader @@ n2 :> Follower @@ n3 :> Follower)
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>>)
+/\ immediatelyCommitted = {}
+
+50 states generated, 9 distinct states found, 4 states left on queue.
+The depth of the complete state graph search is 3.
+The average outdegree of the complete state graph is 2 (minimum is 1, the maximum 3 and the 95th percentile is 3).
+Finished in 01s at (2026-10-29 08:12:23)

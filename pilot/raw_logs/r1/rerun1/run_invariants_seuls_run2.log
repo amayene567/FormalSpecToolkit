@@ -1,0 +1,29 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 8 and seed -8303201428107300478 with 1 worker on 4 cores with 1737MB heap and 64MB offheap memory [pid: 8761] (Linux 6.8.0-138-generic amd64, Oracle Corporation 21.0.3 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /home/nzinga/Documents/formal_spec_toolkit/mongo-full/run_invariants_seuls/MCRaftMongo.tla
+Parsing file /home/nzinga/Documents/formal_spec_toolkit/mongo-full/run_invariants_seuls/RaftMongo.tla
+Parsing file /tmp/Integers.tla
+Parsing file /tmp/FiniteSets.tla
+Parsing file /tmp/Sequences.tla
+Parsing file /tmp/Naturals.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module RaftMongo
+Semantic processing of module MCRaftMongo
+Starting... (2026-10-14 05:43:26)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-10-14 05:43:27.
+Progress(7) at 2026-10-14 05:43:30: 56 268 states generated (56 268 s/min), 12 706 distinct states found (12 706 ds/min), 8 814 states left on queue.
+Progress(12) at 2026-10-14 05:44:30: 2 260 566 states generated (2 204 298 s/min), 219 187 distinct states found (206 481 ds/min), 72 077 states left on queue.
+Progress(14) at 2026-10-14 05:45:30: 4 375 856 states generated (2 115 290 s/min), 330 807 distinct states found (111 620 ds/min), 39 018 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 1.0E-7
+  based on the actual fingerprints:  val = 9.3E-9
+5398516 states generated, 371368 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 21.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 13 and the 95th percentile is 3).
+Finished in 02min 49s at (2026-10-14 05:46:15)

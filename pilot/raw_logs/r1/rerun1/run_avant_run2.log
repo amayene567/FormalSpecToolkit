@@ -1,0 +1,28 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 17 and seed 469854624986276343 with 1 worker on 4 cores with 1737MB heap and 64MB offheap memory [pid: 8183] (Linux 6.8.0-138-generic amd64, Oracle Corporation 21.0.3 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /home/nzinga/Documents/formal_spec_toolkit/mongo-full/run_avant/MCRaftMongo.tla
+Parsing file /home/nzinga/Documents/formal_spec_toolkit/mongo-full/run_avant/RaftMongo.tla
+Parsing file /tmp/Integers.tla
+Parsing file /tmp/FiniteSets.tla
+Parsing file /tmp/Sequences.tla
+Parsing file /tmp/Naturals.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module RaftMongo
+Semantic processing of module MCRaftMongo
+Starting... (2026-10-14 05:41:39)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-10-14 05:41:39.
+Progress(8) at 2026-10-14 05:41:42: 66 800 states generated (66 800 s/min), 14 581 distinct states found (14 581 ds/min), 10 002 states left on queue.
+Progress(12) at 2026-10-14 05:42:42: 3 131 717 states generated (3 064 917 s/min), 272 553 distinct states found (257 972 ds/min), 67 000 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 1.0E-7
+  based on the actual fingerprints:  val = 6.1E-9
+5398516 states generated, 371368 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 21.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 13 and the 95th percentile is 3).
+Finished in 01min 46s at (2026-10-14 05:43:25)

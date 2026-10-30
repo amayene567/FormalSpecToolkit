@@ -1,0 +1,29 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 64 and seed -9105991657975581226 with 1 worker on 4 cores with 1737MB heap and 64MB offheap memory [pid: 8100] (Linux 6.8.0-138-generic amd64, Oracle Corporation 21.0.3 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /home/nzinga/Documents/formal_spec_toolkit/mongo-full/run_invariants_seuls/MCRaftMongo.tla
+Parsing file /home/nzinga/Documents/formal_spec_toolkit/mongo-full/run_invariants_seuls/RaftMongo.tla
+Parsing file /tmp/Integers.tla
+Parsing file /tmp/FiniteSets.tla
+Parsing file /tmp/Sequences.tla
+Parsing file /tmp/Naturals.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module RaftMongo
+Semantic processing of module MCRaftMongo
+Starting... (2026-10-14 05:38:56)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-10-14 05:38:56.
+Progress(7) at 2026-10-14 05:38:59: 60 390 states generated (60 390 s/min), 13 567 distinct states found (13 567 ds/min), 9 400 states left on queue.
+Progress(11) at 2026-10-14 05:39:59: 2 099 322 states generated (2 038 932 s/min), 208 733 distinct states found (195 166 ds/min), 72 128 states left on queue.
+Progress(13) at 2026-10-14 05:40:59: 4 102 200 states generated (2 002 878 s/min), 319 668 distinct states found (110 935 ds/min), 47 315 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 1.0E-7
+  based on the actual fingerprints:  val = 2.0E-9
+5398516 states generated, 371368 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 21.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 13 and the 95th percentile is 3).
+Finished in 02min 42s at (2026-10-14 05:41:38)

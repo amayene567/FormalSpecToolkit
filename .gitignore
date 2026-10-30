@@ -1,2 +1,6 @@
 mongo-full/
 mongo-shallow/
+pilot/specs/
+*.dump
+states/
+neuralmc/
