@@ -4,3 +4,4 @@ pilot/specs/
 *.dump
 states/
 neuralmc/
+pilot/ethnographie_*.md
